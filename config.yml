@@ -1,0 +1,16 @@
+title: learning all day
+description: this is test in my first  day when i try to use github
+template:
+  repo: learning-all-day-template
+  name: learning-all-day
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
